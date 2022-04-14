@@ -12,7 +12,7 @@ function setup() {
     framework: "karate"
   })
 
-  karate.configure("connectTimeout", 40000);
+  karate.configure("readTimeout", 40000);
 
   if(env == "dev") {
     karate.configure("logPrettyRequest", true);
